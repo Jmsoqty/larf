@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Mommy!</title>
+    <link rel="icon" href="heart.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
+     
+     <!-- Add a play button -->
+     <button class="button-56" role="button" id="playButton">Click Me</button>
+     <ul>
+        <center>
+        <li><img src="8.jpg" width="200">
+          <p>I love you</p></li>
+        <li><img src="7.jpg" width="200"/>
+          <p>Je t'aime</p></li>
+        <li><img src="6.jpg" width="200"/>
+          <p>Te amo</p></li>
+        <li><img src="5.jpg" width="200"/>
+          <p>Ich liebe Dich</p></li>
+        <li><img src="4.jpg" width="200"/>
+          <p>사랑해</p></li>
+        <li><img src="3.jpg" width="200"/>
+          <p>Mahal kita</p></li>
+        <li><img src="2.jpg" width="200"/>
+          <p>愛してる</p></li>
+      </ul>
+        </center>
+      <div class="light"></div>
+
+     <audio id="audioElement">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+        // Get the play button and audio element
+        const playButton = document.getElementById("playButton");
+        const audioElement = document.getElementById("audioElement");
+        
+        // Add a click event listener to the play button
+        playButton.addEventListener("click", function() {
+            audioElement.play();
+        });
+    </script>
+</body>
+</html>
